@@ -11,6 +11,7 @@ import javax.swing.JTextArea;
 public class TextAreaLabel extends JTextArea {
 
     public TextAreaLabel( ){
+        super();
         init();
     }
     
@@ -22,5 +23,9 @@ public class TextAreaLabel extends JTextArea {
         setWrapStyleWord(true);
     }
     
+    @Override
+    protected void paintComponent(java.awt.Graphics g){
+        super.paintComponent(g);
+    }
 
 }
